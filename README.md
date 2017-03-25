@@ -1,8 +1,8 @@
-#Cardeal API
+# Cardeal API
 
-![Build Status] (https://codeship.com/projects/27a3d680-f3a5-0134-6627-229b5f57124a/status?branch=master)
+![Build Status](https://codeship.com/projects/27a3d680-f3a5-0134-6627-229b5f57124a/status?branch=master)
 
-##Requirements
+## Requirements
 
 In order to run this test you will need to have:
 
