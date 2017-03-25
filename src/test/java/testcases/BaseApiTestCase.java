@@ -27,7 +27,7 @@ public abstract class BaseApiTestCase {
   protected static final String WRAPPING_JSON_SCHEMA = "wrapping-schema.json";
 
   protected static final String RETRIEVED_ITEMS_PATH = "wkda";
-  protected static final String RETRIEVED_ITEMS_AMOUNT_PATH = "wkda.keySet().size()";
+  protected static final String RETRIEVED_ITEMS_AMOUNT_PATH = RETRIEVED_ITEMS_PATH + ".keySet().size()";
 
 
   @Before
