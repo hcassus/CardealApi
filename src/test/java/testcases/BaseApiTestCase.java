@@ -6,10 +6,11 @@ import org.junit.Before;
 public abstract class BaseApiTestCase {
 
   private static final String BASE_URL = System.getenv("CAR_BASE_URL");
+  private static final String BASE_SERVICE = "/v1/car-types";
 
-  protected static final String MAIN_TYPES_ENDPOINT = "/main-types";
-  protected static final String BUILT_DATES_ENDPOINT = "/built-dates";
-  protected static final String MANUFACTURER_ENDPOINT = "/manufacturer";
+  protected static final String MAIN_TYPES_ENDPOINT = BASE_SERVICE + "/main-types";
+  protected static final String BUILT_DATES_ENDPOINT = BASE_SERVICE + "/built-dates";
+  protected static final String MANUFACTURER_ENDPOINT = BASE_SERVICE + "/manufacturer";
 
   protected static final String AUTH_TOKEN_KEY = "wa_key";
   protected static final String AUTH_TOKEN_VALUE = System.getenv("CAR_AUTH_TOKEN");
@@ -23,10 +24,10 @@ public abstract class BaseApiTestCase {
   protected static final int HTTP_OK = 200;
   protected static final int HTTP_UNAUTHORIZED = 401;
 
-  public static final String WRAPPING_JSON_SCHEMA = "wrapping-schema.json";
+  protected static final String WRAPPING_JSON_SCHEMA = "wrapping-schema.json";
 
-  public static final String RETRIEVED_ITEMS_PATH = "wkda";
-  public static final String RETRIEVED_ITEMS_AMOUNT_PATH = "wkda.keySet().size()";
+  protected static final String RETRIEVED_ITEMS_PATH = "wkda";
+  protected static final String RETRIEVED_ITEMS_AMOUNT_PATH = "wkda.keySet().size()";
 
 
   @Before
